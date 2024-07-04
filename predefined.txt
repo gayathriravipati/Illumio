@@ -18,3 +18,8 @@ its
 nvm2929
 nity
 rally
+first:one
+it's
+sip-on
+hey-there
+first_serve

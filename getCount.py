@@ -23,7 +23,7 @@ def read_and_count_words(file_path, frequency_map):
     try:
         with open(file_path, 'r') as file:
             for line in file:
-                words = re.findall(r"\b\w+(?:'\w+)?\b", line)
+                words = re.findall(r"\b[\w'-:]+\b", line)  #To handle punctuation in between the words
                 for word in words:
                     converted_word = ''.join([char.lower() if char.isupper() else char for char in word])
                     if converted_word in frequency_map:
