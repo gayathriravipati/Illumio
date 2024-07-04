@@ -7,7 +7,7 @@ Write a program that reads a file and finds matches against a predefined set of 
 Input Files:
 
 predefined.txt	- Contains a list of unique predefined words, one word in each line, which are alphanumeric
-randomwords.txt	-  Contains multiple lines, each line have multiple words
+randomwords.txt	-  Contains multiple lines, each line having multiple words
 
 
 Here are the assumptions:
@@ -29,11 +29,10 @@ u - size of the map i.e., number of predefined words
 
 Space Complexity: O(u) - size of the map
 
-Constraints given:  20 MB file and 10000 lines
-Both the functions in the code, opens the file using with open(file_path, 'r') as file:. This ensures that the file is properly closed after reading, even if an exception occurs. 
-The file is read line by line using for line in file:, which is memory efficient as it does not load the entire file into memory. This approach is suitable for large files. 
+Constraints: The file size can be around 20 MB and may contain up to 10,000 lines.
 
-Also, the use of dictionaries for counting and regex for word extraction ensures the optimised solution.
+Both functions in the code open the file using with open(file_path, 'r') as file: This ensures that the file is properly closed after reading, even if an exception occurs. The file is read line by line using "for line in file:", which is memory efficient because it does not load the entire file into memory at once. This approach is well-suited for handling large files.
+Also, the use of dictionaries for counting and regex for word extraction ensures the optimized solution.
 
 How to run the program: python3 getCount.py
 
