@@ -62,9 +62,13 @@ nvm2929: 8
 semiCircular: 8
 spectacular: 8
 test: 8
+It's: 7
 its: 7
-It's: 6
 Where: 6
 WE'VE: 1
+first_serve: 1
+hey-there: 1
+sip-on: 1
+first:one: 0
 nity: 0
 rally: 0
