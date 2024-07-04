@@ -1,7 +1,7 @@
 # Illumio_Assessment
 Task: 
 
-Write a program that reads a file and finds matches against a predefined set of words(predefined.txt).  
+Write a program that reads a file and finds matches against a predefined set of words(predefined.txt) based on the given constraints.  
 
 
 Input Files:
@@ -29,10 +29,24 @@ u - size of the map i.e., number of predefined words
 
 Space Complexity: O(u) - size of the map
 
-Command to execute: python3 getCount.py
-
 Constraints given:  20 MB file and 10000 lines
 Both the functions in the code, opens the file using with open(file_path, 'r') as file:. This ensures that the file is properly closed after reading, even if an exception occurs. 
 The file is read line by line using for line in file:, which is memory efficient as it does not load the entire file into memory. This approach is suitable for large files. 
 
 Also, the use of dictionaries for counting and regex for word extraction ensures the optimised solution.
+
+How to run the program: python3 getCount.py
+
+What is tested?
+The program is tested using specific input files that include predefined words and random text. The tests cover a range of word types, including:
+
+- All lowercase letters (e.g., "spectacular")
+- All uppercase letters (e.g., "AHJKJS")
+- Mixed uppercase and lowercase letters (e.g., "semiCircular")
+- Numerical-only words (e.g., "29339")
+- Alphanumeric combinations (e.g., "nvm2929")
+- Words with apostrophes (e.g., "It's")
+
+
+
+
