@@ -23,10 +23,8 @@ def read_and_count_words(file_path, frequency_map):
     try:
         with open(file_path, 'r') as file:
             for line in file:
-                # Use regex to find words
                 words = re.findall(r"\b\w+(?:'\w+)?\b", line)
                 for word in words:
-                    # Convert word to lowercase
                     converted_word = ''.join([char.lower() if char.isupper() else char for char in word])
                     if converted_word in frequency_map:
                         frequency_map[converted_word][1] += 1
