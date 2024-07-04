@@ -42,10 +42,29 @@ The program is tested using specific input files that include predefined words a
 - All lowercase letters (e.g., "spectacular")
 - All uppercase letters (e.g., "AHJKJS")
 - Mixed uppercase and lowercase letters (e.g., "semiCircular")
+- Words with punctuation within characters (e.g., "It's")
 - Numerical-only words (e.g., "29339")
 - Alphanumeric combinations (e.g., "nvm2929")
-- Words with apostrophes (e.g., "It's")
 
+Output received for the given set of predefined words:
 
-
-
+here: 11
+Systemic: 9
+There: 9
+29339: 8
+AHJKJS: 8
+Girls: 8
+Present: 8
+Typhoon1: 8
+ambitious: 8
+nfjndj: 8
+nvm2929: 8
+semiCircular: 8
+spectacular: 8
+test: 8
+its: 7
+It's: 6
+Where: 6
+WE'VE: 1
+nity: 0
+rally: 0
